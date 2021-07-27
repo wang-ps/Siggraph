@@ -1,0 +1,87 @@
+% \documentclass[acmtog,screen=true,nonacm]{acmart}
+\documentclass[acmtog,screen=true,anonymous,review,nonacm]{acmart}
+% \documentclass[acmsmall,screen=true,nonacm]{acmart}
+\acmSubmissionID{-1}
+
+\usepackage{booktabs}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{overpic}
+
+\citestyle{acmauthoryear}
+\graphicspath{{./images/}}
+
+
+% comments
+\newcommand{\ps}[1]{\textcolor{magenta}{(ps: #1)}}
+% \newcommand{\ps}[1]{} % for submission
+% \renewcommand{\paragraph}[1]{\vspace{1mm}\noindent\textbf{#1.}}
+
+% Table style: usage - \tablestyle{4pt}{1.1}
+\newcommand{\rev}[1]{\textcolor{red}{#1}}
+\newcommand{\tablestyle}[2]{\setlength{\tabcolsep}{#1}
+                            \renewcommand{\arraystretch}{#2}
+                            \centering
+                            \footnotesize} 
+
+% Remove address
+\makeatletter
+\let\@authorsaddresses\@empty
+\makeatother
+
+
+%%%%%%%%% TITLE
+\title{Title}
+
+
+%%%%%%%%% AUTHORS
+%\author{Peng-Shuai Wang}
+%\affiliation{
+%  \institution{Microsoft Research Asia}}
+%\email{wangps@hotmail.com}
+
+
+%%%%%%%%% ABSTRACT
+\begin{abstract}
+  Abstract
+\end{abstract}
+
+
+% %%%%%%%%% KEYWORDS
+% \keywords{KEYWORDS}
+
+
+%%%%%%%%% DOCUMENT STARTS
+\begin{document}
+\maketitle
+
+
+%%%%%%%%% BODY TEXT
+\input{src/introduction}
+\input{src/relatedwork}
+\input{src/method}
+\input{src/results}
+\input{src/conclusion}
+
+
+%%%%%%%%% ACKs
+%\begin{acks}
+%The authors would like to thank ...
+%\end{acks}
+
+
+%%%%%%%%% REFERENCE
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{src/ref/reference}
+
+
+% %%%%%%%%% APPENDIX
+\appendix
+\input{src/appendix}
+
+
+\end{document}
+

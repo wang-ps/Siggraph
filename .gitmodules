@@ -1,0 +1,3 @@
+[submodule "src/ref"]
+	path = src/ref
+	url = https://github.com/wang-ps/Bibtex.git
