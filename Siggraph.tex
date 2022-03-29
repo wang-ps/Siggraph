@@ -11,15 +11,17 @@
 \usepackage{amssymb}
 \usepackage{overpic}
 \usepackage{enumitem}
+\usepackage{layouts}
+\usepackage[capitalise]{cleveref} 
 
 \citestyle{acmauthoryear}
 \graphicspath{{./images/}}
 
 
-% comments
 \newcommand{\ps}[1]{\textcolor{magenta}{(ps: #1)}}
 % \newcommand{\ps}[1]{} % for submission
 % \renewcommand{\paragraph}[1]{\vspace{1mm}\noindent\textbf{#1.}}
+% Line width in cm: \printinunitsof{cm}\prntlen{\linewidth}
 
 \newcommand{\todo}[1]{\textcolor{red}{(TODO: #1)}}
 \newcommand{\rev}[1]{\textcolor{red}{#1}}
@@ -30,6 +32,10 @@
                             \renewcommand{\arraystretch}{#2}
                             \centering
                             \footnotesize} 
+
+\def \etal {{\emph{et al}.\thinspace}}
+\def \etc {{\emph{etc}.\thinspace}}
+
 
 % Remove address
 \makeatletter
@@ -114,7 +120,8 @@
 
 % %%%%%%%%% APPENDIX
 \appendix
-\input{src/appendix}
+\input{src/appendix/appendix}
+\input{src/appendix/readings}
 
 
 \end{document}
