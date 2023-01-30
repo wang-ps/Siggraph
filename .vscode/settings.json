@@ -1,0 +1,16 @@
+{
+  // "editor.wordWrap": "wordWrapColumn",
+  // "diffEditor.renderSideBySide": true,
+  "files.exclude": {
+    "**.aux": true,
+    "**.bbl": true,
+    "**.blg": true,
+    "**.brf": true,
+    "**.fdb_latexmk": true,
+    "**.fls": true,
+    "**.log": true,
+    "**.out": true,
+    "**.synctex.gz": true,
+    "**.synctex(busy):": true,
+  }
+}
