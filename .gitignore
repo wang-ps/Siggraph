@@ -9,10 +9,11 @@
 *.fls
 *.fdb_latexmk
 .svn
-Data
 *~$*.pptx
 *.brf
 *.log
 *.aux
 
+Data
+out
 Siggraph.pdf
